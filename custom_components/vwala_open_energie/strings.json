@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Vwala Open Energie",
+        "menu_options": {
+          "email": "Aanmelden via e-mail (OTP)",
+          "api_key": "Bestaande API-sleutel invoeren"
+        }
+      },
+      "email": {
+        "title": "Vwala Open Energie \u2013 Aanmelden",
+        "description": "Voer je e-mailadres in. Je ontvangt een eenmalige code (OTP) om je aan te melden.",
+        "data": {
+          "email": "E-mailadres"
+        },
+        "data_description": {
+          "email": "Het e-mailadres dat gekoppeld is aan je Vwala-account."
+        }
+      },
+      "api_key": {
+        "title": "Vwala Open Energie \u2013 API-sleutel",
+        "description": "Plak je bestaande langdurige API-sleutel. Deze sleutel is aangemaakt via de OTP-flow of de Vwala-website.",
+        "data": {
+          "api_key": "API-sleutel"
+        },
+        "data_description": {
+          "api_key": "Je langdurige Vwala Open Energie API-sleutel."
+        }
+      },
+      "otp": {
+        "title": "Vwala Open Energie \u2013 Verificatiecode",
+        "description": "Er is een verificatiecode verzonden naar **{email}**.\nVoer de code hieronder in. De code is **{remaining} seconden** geldig.",
+        "data": {
+          "otp_code": "Verificatiecode (OTP)"
+        }
+      },
+      "meter_setup": {
+        "title": "Vwala Open Energie \u2013 Meterinstellingen",
+        "description": "Voer je postcode in en geef aan welk type meter en tarief je hebt.",
+        "data": {
+          "postal_code": "Postcode (4 cijfers)",
+          "meter_type": "Metertype",
+          "tariff_type": "Tarieftype"
+        },
+        "data_description": {
+          "postal_code": "Je Belgische postcode van 4 cijfers.",
+          "meter_type": "Digitale of analoge meter.",
+          "tariff_type": "Enkelvoudig (\u00e9\u00e9n tarief), tweevoudig (dag/nacht) of exclusief nachtmeter."
+        }
+      },
+      "select_provider": {
+        "title": "Vwala Open Energie \u2013 Distributienetbeheerder",
+        "description": "Selecteer je distributienetbeheerder voor postcode **{postal_code}**.",
+        "data": {
+          "provider_id": "Distributienetbeheerder"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kan geen verbinding maken met de Vwala Open Energie API. Controleer je internetverbinding.",
+      "invalid_otp": "Ongeldige of verlopen verificatiecode. Probeer het opnieuw.",
+      "otp_expired": "De verificatiecode is verlopen (meer dan 2 minuten). Ga terug en vraag een nieuwe code aan.",
+      "api_key_failed": "Kon geen API-sleutel aanmaken. Probeer het later opnieuw.",
+      "invalid_api_key": "Ongeldige API-sleutel. Controleer de sleutel en probeer het opnieuw.",
+      "no_providers": "Geen distributienetbeheerders gevonden voor deze postcode.",
+      "invalid_postal_code": "Ongeldige postcode. Voer een geldige Belgische postcode van 4 cijfers in.",
+      "invalid_provider": "Ongeldige distributienetbeheerder geselecteerd."
+    },
+    "abort": {
+      "already_configured": "Deze integratie is al geconfigureerd."
+    }
+  }
+}

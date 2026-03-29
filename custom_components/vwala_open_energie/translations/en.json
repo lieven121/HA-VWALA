@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Vwala Open Energie",
+        "menu_options": {
+          "email": "Sign in with e-mail (OTP)",
+          "api_key": "Enter an existing API key"
+        }
+      },
+      "email": {
+        "title": "Vwala Open Energie \u2013 Sign In",
+        "description": "Enter your e-mail address. A one-time password (OTP) will be sent to you.",
+        "data": {
+          "email": "E-mail Address"
+        },
+        "data_description": {
+          "email": "An e-mail address to link your API key."
+        }
+      },
+      "api_key": {
+        "title": "Vwala Open Energie \u2013 API Key",
+        "description": "Paste your existing long-lived API key. This key was created via the OTP flow or the Vwala website.",
+        "data": {
+          "api_key": "API Key"
+        },
+        "data_description": {
+          "api_key": "Your long-lived Vwala Open Energie API key."
+        }
+      },
+      "otp": {
+        "title": "Vwala Open Energie \u2013 Verify OTP",
+        "description": "A verification code has been sent to **{email}**.\nEnter the code below. The code is valid for **{remaining} seconds**.",
+        "data": {
+          "otp_code": "Verification Code (OTP)"
+        }
+      },
+      "meter_setup": {
+        "title": "Vwala Open Energie \u2013 Meter Configuration",
+        "description": "Enter your postal code and select your meter type and tariff type.",
+        "data": {
+          "postal_code": "Postal Code (4 digits)",
+          "meter_type": "Meter Type",
+          "tariff_type": "Tariff Type"
+        },
+        "data_description": {
+          "postal_code": "Your 4-digit Belgian postal code.",
+          "meter_type": "Digital or analog electricity meter.",
+          "tariff_type": "Single rate (enkelvoudig), day/night (tweevoudig), or exclusive night meter (nachtmeter)."
+        }
+      },
+      "select_provider": {
+        "title": "Vwala Open Energie \u2013 Distribution Net Provider",
+        "description": "Select your distribution net provider for postal code **{postal_code}**.",
+        "data": {
+          "provider_id": "Distribution Net Provider"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to the Vwala Open Energie API. Check your internet connection.",
+      "invalid_otp": "Invalid or expired verification code. Please try again.",
+      "otp_expired": "The verification code has expired (more than 2 minutes). Go back and request a new code.",
+      "api_key_failed": "Could not create an API key. Please try again later.",
+      "invalid_api_key": "Invalid API key. Please check the key and try again.",
+      "no_providers": "No distribution net providers found for this postal code.",
+      "invalid_postal_code": "Invalid postal code. Please enter a valid 4-digit Belgian postal code.",
+      "invalid_provider": "Invalid distribution net provider selected."
+    },
+    "abort": {
+      "already_configured": "This integration is already configured."
+    }
+  }
+}

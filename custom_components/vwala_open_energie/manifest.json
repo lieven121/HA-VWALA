@@ -1,0 +1,11 @@
+{
+  "domain": "vwala_open_energie",
+  "name": "Vwala Open Energie",
+  "config_flow": true,
+  "documentation": "https://open-energie.docs.vwala.be",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": [],
+  "version": "0.2.0",
+  "iot_class": "cloud_polling"
+}
